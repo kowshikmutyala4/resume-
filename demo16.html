@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="name">username:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" placeholder="password"><br><br>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="url"> profile website:</label>
+            <input type="url" id="url" name="url" placeholder="https://"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>personal data</legend>
+                <label for ="dob">date of birth:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+                <label for="time">interview time:</label>
+                <input type="time" id="time" name="time"><br><br>
+                <label for ="number">phone number:</label>
+                <input type="number" id="number" name="number" placeholder="7671823256"><br><br>
+                <label for ="range">sill level(1-100):</label>
+                <input type="range" id="range" name="range" min="1" max="100"><br><br>
+                <label for="color">Favorite color:</label>
+                <input type="color" id="color" name="color"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>technical preferences</legend>
+                <label for job>job role:</label>
+                <select name="tech" id="tech">
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="javascript">javascript</option>
+                        <option value="python">python</option>
+                    </select><br><br>
+                    <label for="system">operating system:</label>
+                    <input type="radio" id="windows" name="os" value="windows">windows
+                    <input type="radio" id="linux" name="os" value="linux">linux
+                    <input type="radio" id="mac" name="os" value="mac">mac<br><br>
+                    <label for="language">known language:</label>
+                    <input type ="checkbox" id="html" name="language" value="html">html
+                    <input type ="checkbox" id="css" name="language" value="css">css
+                    <input type ="checkbox" id="javascript" name="language" value="javascript">javascript<br><br>
+                    <label for ="browser">browser:</label>
+                    <input type="text" id="browser" name="browser" list="browsers">
+                    <datalist id="browsers">
+                        <option value="chrome">
+                        <option value="firefox">
+                        <option value="safari">
+                        <option value="edge">
+                    </datalist><br><BR>
+                    <label for="file">upload id(pdf):</label>
+                    <input type="file" id="file" name="file" accept=".pdf">
+            </fieldset>
+            <div align="center">
+            <button type="submit">submit application</button>
+            <button type="reset">clear all</button>
+            </div>
+    </form>
+</body>
+</html>
